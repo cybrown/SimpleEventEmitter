@@ -3,6 +3,7 @@ SimpleEventEmitter
 
 Author: Cy Brown
 Version: 0.0.1
+LastUpdate: 8 July 2013
 
 Simple Javascript EventEmitter with very poor features for medium apps.
 
