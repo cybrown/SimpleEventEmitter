@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Test EventEmitter</title>
+    <script src="../eventemitter.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script>
+    var A = function () {
+        EventEmitter.call(this);
+    }
+    A.prototype = new EventEmitter();
+    A.prototype.sayHello = function () {
+        console.log('hello A');
+    };
+
+    var e = new A();
+    e.on("test", function () {
+        this.sayHello();
+        console.log('OK');
+    });
+    e.emit('test');
+</script>
+
+</body>
+</html>

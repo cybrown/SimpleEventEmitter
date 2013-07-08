@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Test EventEmitter</title>
+    <script src="../js/lib/requirejs/require.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <script>
+    require(['../eventemitter'], function (AmdEventEmitter) {
+        var e = new AmdEventEmitter();
+        e.on("test", function () {
+            console.log('OK');
+        });
+        e.emit('test');
+    });
+    </script>
+</body>
+</html>

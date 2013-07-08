@@ -1,0 +1,16 @@
+{
+  "name": "SimpleEventEmitter",
+  "version": "0.0.1",
+  "main": "js/lib",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "requirejs": "*"
+  }
+}
